@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>menuServlet</servlet-name>
+        <servlet-class>za.ac.tut.web.menuServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ViewCardServlet</servlet-name>
+        <servlet-class>za.ac.tut.web.ViewCardServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AddServlet</servlet-name>
+        <servlet-class>za.ac.tut.web.AddServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>OutComeServlet</servlet-name>
+        <servlet-class>za.ac.tut.web.OutComeServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>menuServlet</servlet-name>
+        <url-pattern>/menuServlet.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ViewCardServlet</servlet-name>
+        <url-pattern>/ViewCardServlet.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AddServlet</servlet-name>
+        <url-pattern>/AddServlet.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>OutComeServlet</servlet-name>
+        <url-pattern>/OutComeServlet.do</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
